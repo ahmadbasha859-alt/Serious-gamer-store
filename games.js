@@ -207,3 +207,42 @@ const games = [
     ]
   }
 ];
+{
+  id: 7,
+  title: "FC 2027 Mobile Offline",
+  titleAr: "إف سي 2027 موبايل أوفلاين",
+  developer: "AlphaTrix Gaming",
+  genre: "Sports / Football",
+  status: "playing",
+  rating: 9.3,
+  date: "2026-09-01",
+  size: "2.5 GB (APK + OBB + DATA)",
+  downloadCount: 18700,
+  notes: "نسخة معدّلة من FC 2027 تعمل أوفلاين بالكامل. تحتاج تثبيت APK أولاً ثم وضع ملف OBB في مجلد Android/obb وملف DATA في مجلد Android/data. اللعبة تعمل بدون إنترنت وبجرافيكس ممتاز.",
+  cover: {
+    colorA: "#1a6b3a",
+    colorB: "#0a1f12",
+    pattern: "lines",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="50" r="32"/>
+      <path d="M50 32 L64 44 L58 62 L42 62 L36 44 Z"/>
+      <path d="M50 18 L50 32"/>
+      <path d="M78 38 L64 44"/>
+      <path d="M78 62 L58 62"/>
+      <path d="M50 82 L42 62"/>
+      <path d="M22 62 L36 44"/>
+      <path d="M22 38 L50 18"/>
+      <path d="M30 86 L70 86"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "mediafire", name: "APK (الملف الأساسي)", url: "https://www.mediafire.com/file/lvwxo5nwccxe8yr/APK+FC26%25E2%2584%25A2+ANDROID+OFFLINE+BY+ALPHATRIX+GAMING.zip/file" },
+    { source: "mediafire", name: "OBB (بيانات اللعبة)", url: "https://www.mediafire.com/file/ycxkoqne89x35zh/FIFA_16_OBB_BY+ALPHATRIX+GAMING.zip/file" },
+    { source: "mediafire", name: "DATA (حفظ وإصلاح)", url: "https://www.mediafire.com/file/ifzt97yn2n02yjv/FC27_FIX_SAVE_TOURNAMENT.zip/file" }
+  ],
+  comments: [
+    { name: "أحمد الحسن", dialect: "مصري", sentiment: "positive", rating: 5, text: "يا جدعان دي أحسن من النسخة الأصلية! أوفلاين وبدون نت وبجرافيكس تحفة. شغالة زي الفل." },
+    { name: "خالد العتيبي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "حلوة والله، بس يبي لها مساحة كبيرة وتحميل ثلاث ملفات. إذا ركبتها صح تشتغل تمام." },
+    { name: "علي كربلائي", dialect: "عراقي", sentiment: "negative", rating: 3, text: "حملت الملفات بس ما اشتغلت أول مرة، لازم ترتب المجلدات زين. بعد التعديل اشتغلت." }
+  ]
+}
