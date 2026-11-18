@@ -1,16 +1,15 @@
 // ==========================================
-// SERIOUS GAMER — المنطق الكامل
+// SERIOUS GAMER — المنطق الكامل المحسّن
 // ==========================================
 
-// العناصر
 const grid = document.getElementById("gamesGrid");
 const searchInput = document.getElementById("searchInput");
 const themeBtn = document.getElementById("themeBtn");
 const navButtons = document.querySelectorAll(".nav-btn");
 const sortChips = document.querySelectorAll(".sort-chip");
 const resultsCount = document.getElementById("resultsCount");
+const lastUpdateEl = document.getElementById("lastUpdate");
 
-// عناصر التفاصيل
 const overlay = document.getElementById("detailOverlay");
 const detailCover = document.getElementById("detailCover");
 const detailMonogram = document.getElementById("detailMonogram");
@@ -28,8 +27,9 @@ const detailClose = document.getElementById("detailClose");
 const favBtn = document.getElementById("favBtn");
 const downloadsWrap = document.getElementById("downloadsWrap");
 const commentsList = document.getElementById("commentsList");
+const ratingBarFill = document.getElementById("ratingBarFill");
+const suggestedList = document.getElementById("suggestedList");
 
-// الحالة
 let currentView = "all";
 let searchQuery = "";
 let currentSort = "newest";
@@ -38,7 +38,6 @@ let currentGameId = null;
 // ==========================================
 // المفضلة
 // ==========================================
-
 function getFavorites() {
   try {
     return JSON.parse(localStorage.getItem("sg_favs") || "[]");
@@ -68,16 +67,10 @@ function toggleFavorite(id) {
 // ==========================================
 // أدوات
 // ==========================================
-
 const STATUS_LABELS = {
   playing: "قيد اللعب",
   done: "مكتمل",
   dropped: "متروك"
-};
-
-const SENTIMENT_LABELS = {
-  positive: "إيجابي",
-  negative: "سلبي"
 };
 
 function formatDate(dateStr) {
@@ -91,7 +84,6 @@ function formatCount(n) {
   return String(n);
 }
 
-// لون عشوائي ثابت لكل اسم (لتوليد ألوان avatars)
 function nameToColor(name) {
   let hash = 0;
   for (let i = 0; i < name.length; i++) {
@@ -110,32 +102,65 @@ function initials(name) {
 }
 
 // ==========================================
-// بناء بطاقة اللعبة
+// شارة "جديد" + آخر تحديث
 // ==========================================
+function isNewGame(dateStr) {
+  const d = new Date(dateStr);
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+  return d > thirtyDaysAgo;
+}
 
+function applyLastUpdate() {
+  if (!lastUpdateEl || !games || games.length === 0) return;
+
+  let latest = null;
+  games.forEach(function (g) {
+    const d = new Date(g.date);
+    if (!latest || d > latest) latest = d;
+  });
+
+  if (!latest) return;
+
+  const now = new Date();
+  const diffDays = Math.floor((now - latest) / (1000 * 60 * 60 * 24));
+
+  if (diffDays < 1) {
+    lastUpdateEl.textContent = "آخر تحديث: اليوم";
+  } else if (diffDays === 1) {
+    lastUpdateEl.textContent = "آخر تحديث: أمس";
+  } else if (diffDays < 30) {
+    lastUpdateEl.textContent = "آخر تحديث: منذ " + diffDays + " يوم";
+  } else {
+    lastUpdateEl.textContent = "آخر تحديث: منذ " + Math.floor(diffDays / 30) + " شهر";
+  }
+}
+
+// ==========================================
+// بناء البطاقة
+// ==========================================
 function createGameCard(game) {
   const card = document.createElement("div");
   card.className = "game-card";
   card.dataset.id = game.id;
 
-  // الغلاف
+  if (isNewGame(game.date)) {
+    card.dataset.new = "true";
+  }
+
   const cover = document.createElement("div");
   cover.className = `game-cover pattern-${game.cover.pattern}`;
   cover.style.background = `linear-gradient(135deg, ${game.cover.colorA}, ${game.cover.colorB})`;
 
-  // شارة الحالة
   const statusBadge = document.createElement("span");
   statusBadge.className = "cover-status " + game.status;
   statusBadge.textContent = STATUS_LABELS[game.status];
   cover.appendChild(statusBadge);
 
-  // الرسم
   const art = document.createElement("div");
   art.className = "cover-art";
   art.innerHTML = game.cover.art;
   cover.appendChild(art);
 
-  // زر المفضلة
   const favBtnCard = document.createElement("button");
   favBtnCard.className = "card-fav-btn" + (isFavorite(game.id) ? " is-fav" : "");
   favBtnCard.innerHTML = '<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 3.5 1 5 3 1.5-2 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z" stroke-linejoin="round"/></svg>';
@@ -147,13 +172,11 @@ function createGameCard(game) {
   });
   cover.appendChild(favBtnCard);
 
-  // شارة التحميلات
   const dlBadge = document.createElement("span");
   dlBadge.className = "cover-downloads";
   dlBadge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>' + formatCount(game.downloadCount);
   cover.appendChild(dlBadge);
 
-  // معلومات
   const info = document.createElement("div");
   info.className = "game-info";
 
@@ -189,7 +212,6 @@ function createGameCard(game) {
 // ==========================================
 // الفلترة والترتيب
 // ==========================================
-
 function getFilteredGames() {
   let list = games.filter(function (game) {
     if (currentView === "playing" && game.status !== "playing") return false;
@@ -221,15 +243,10 @@ function getFilteredGames() {
   return list;
 }
 
-// ==========================================
-// عرض الشبكة
-// ==========================================
-
 function renderGames() {
   grid.innerHTML = "";
   const filtered = getFilteredGames();
 
-  // تحديث عدّاد النتائج
   resultsCount.innerHTML = "عدد الألعاب: <strong>" + filtered.length + "</strong>";
 
   if (filtered.length === 0) {
@@ -250,7 +267,6 @@ function renderGames() {
 // ==========================================
 // روابط التحميل
 // ==========================================
-
 function renderDownloads(game) {
   downloadsWrap.innerHTML = "";
 
@@ -299,7 +315,6 @@ function renderDownloads(game) {
 // ==========================================
 // التعليقات
 // ==========================================
-
 function renderComments(game) {
   commentsList.innerHTML = "";
 
@@ -315,7 +330,6 @@ function renderComments(game) {
     const comment = document.createElement("div");
     comment.className = "comment";
 
-    // الرأس
     const head = document.createElement("div");
     head.className = "comment-head";
 
@@ -356,7 +370,6 @@ function renderComments(game) {
     head.appendChild(avatar);
     head.appendChild(info);
 
-    // النص
     const body = document.createElement("p");
     body.className = "comment-body";
 
@@ -374,9 +387,55 @@ function renderComments(game) {
 }
 
 // ==========================================
+// ألعاب مقترحة
+// ==========================================
+function renderSuggested(game) {
+  if (!suggestedList) return;
+  suggestedList.innerHTML = "";
+
+  let similar = games.filter(function (g) {
+    return g.id !== game.id && g.genre === game.genre;
+  });
+
+  if (similar.length < 3) {
+    const others = games.filter(function (g) {
+      return g.id !== game.id && similar.indexOf(g) === -1;
+    });
+    similar = similar.concat(others).slice(0, 5);
+  }
+
+  similar.slice(0, 5).forEach(function (g) {
+    const card = document.createElement("div");
+    card.className = "suggested-card";
+
+    const cover = document.createElement("div");
+    cover.className = "suggested-cover pattern-" + g.cover.pattern;
+    cover.style.background = `linear-gradient(135deg, ${g.cover.colorA}, ${g.cover.colorB})`;
+    cover.innerHTML = g.cover.art;
+
+    const title = document.createElement("div");
+    title.className = "suggested-title";
+    title.textContent = g.title;
+
+    const rating = document.createElement("div");
+    rating.className = "suggested-rating";
+    rating.textContent = "★ " + g.rating;
+
+    card.appendChild(cover);
+    card.appendChild(title);
+    card.appendChild(rating);
+
+    card.addEventListener("click", function () {
+      openDetail(g.id);
+    });
+
+    suggestedList.appendChild(card);
+  });
+}
+
+// ==========================================
 // صفحة التفاصيل
 // ==========================================
-
 function openDetail(id) {
   const game = games.find(function (g) { return g.id === id; });
   if (!game) return;
@@ -385,7 +444,6 @@ function openDetail(id) {
 
   detailCover.style.background = `linear-gradient(135deg, ${game.cover.colorA}, ${game.cover.colorB})`;
 
-  // الرسم
   if (detailMonogram) detailMonogram.style.display = "none";
   const oldArt = detailCover.querySelector('.cover-art');
   if (oldArt) oldArt.remove();
@@ -407,7 +465,16 @@ function openDetail(id) {
   detailDownloads.textContent = formatCount(game.downloadCount);
   detailSize.textContent = game.size;
 
+  // شريط التقييم
+  if (ratingBarFill) {
+    ratingBarFill.style.width = "0%";
+    setTimeout(function () {
+      ratingBarFill.style.width = (game.rating * 10) + "%";
+    }, 100);
+  }
+
   renderDownloads(game);
+  renderSuggested(game);
   renderComments(game);
 
   favBtn.classList.toggle("is-fav", isFavorite(id));
@@ -425,7 +492,6 @@ function closeDetail() {
 // ==========================================
 // التفاعل
 // ==========================================
-
 searchInput.addEventListener("input", function (e) {
   searchQuery = e.target.value.trim();
   renderGames();
@@ -472,5 +538,8 @@ favBtn.addEventListener("click", function () {
   });
 });
 
+// ==========================================
 // التشغيل
+// ==========================================
+applyLastUpdate();
 renderGames();
