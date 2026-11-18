@@ -879,4 +879,320 @@ body.light .bg-glow {
   color: var(--accent);
 }
 
-/* شري
+/* شريط التقييم */
+.rating-bar {
+  height: 3px;
+  background: var(--surface-2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+  width: 0;
+}
+
+/* روابط التحميل */
+.downloads-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.downloads-title {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-weight: 800;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.downloads-title::before {
+  content: '';
+  width: 3px;
+  height: 14px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  border-radius: 2px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 15px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: transform 0.18s, border-color 0.2s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.download-btn:active::after {
+  left: 100%;
+}
+
+.download-btn:last-child {
+  margin-bottom: 0;
+}
+
+.download-btn:active {
+  transform: scale(0.98);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.download-btn .source-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-btn .source-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px currentColor;
+}
+
+.download-btn .source-dot.mega { background: #d9272e; box-shadow: 0 0 10px #d9272e; }
+.download-btn .source-dot.mediafire { background: #1299f3; box-shadow: 0 0 10px #1299f3; }
+.download-btn .source-dot.drive { background: #34a853; box-shadow: 0 0 10px #34a853; }
+.download-btn .source-dot.apkpure { background: #ff6a00; box-shadow: 0 0 10px #ff6a00; }
+.download-btn .source-dot.other { background: #8b5cf6; box-shadow: 0 0 10px #8b5cf6; }
+
+.download-btn .ext-icon {
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.downloads-empty {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* ملاحظاتي */
+.detail-notes-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.detail-subtitle {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-weight: 800;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-subtitle::before {
+  content: '';
+  width: 3px;
+  height: 14px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  border-radius: 2px;
+}
+
+.detail-notes {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* ألعاب مقترحة */
+.suggested-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.suggested-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.suggested-list::-webkit-scrollbar {
+  display: none;
+}
+
+.suggested-card {
+  flex-shrink: 0;
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.suggested-card:active {
+  transform: scale(0.94);
+}
+
+.suggested-cover {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggested-cover svg {
+  width: 60%;
+  height: 60%;
+  color: rgba(255, 255, 255, 0.92);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  z-index: 2;
+  position: relative;
+}
+
+.suggested-title {
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+}
+
+.suggested-rating {
+  font-size: 10px;
+  color: var(--yellow);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* التعليقات */
+.comments-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment {
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 12px 14px;
+  position: relative;
+}
+
+.comment-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.comment-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.comment-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.comment-meta {
+  font-size: 10.5px;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 1px;
+}
+
+.comment-sentiment {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 700;
+}
+
+.comment-sentiment.positive { color: var(--green); }
+.comment-sentiment.negative { color: var(--red); }
+
+.comment-body {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.comment-body .dialect-tag {
+  display: inline-block;
+  font-size: 9.5px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  margin-left: 6px;
+  vertical-align: middle;
+}
