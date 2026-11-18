@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  <!-- ===== خلفية متوهجة ===== -->
   <div class="bg-glow"></div>
 
   <!-- ===== الهيدر ===== -->
@@ -19,6 +18,7 @@
       <div class="brand-text">
         <h1>SERIOUS GAMER</h1>
         <p>أرشيف الألعاب</p>
+        <p class="last-update" id="lastUpdate">جاري التحديث...</p>
       </div>
     </div>
     <button class="icon-btn" id="themeBtn" aria-label="تبديل الوضع">
@@ -26,7 +26,7 @@
     </button>
   </header>
 
-  <!-- ===== شريط البحث ===== -->
+  <!-- ===== البحث ===== -->
   <div class="search-wrap">
     <input
       type="text"
@@ -37,7 +37,7 @@
     >
   </div>
 
-  <!-- ===== شريط الترتيب ===== -->
+  <!-- ===== الترتيب ===== -->
   <div class="sort-bar" id="sortBar">
     <button class="sort-chip active" data-sort="newest">الأحدث</button>
     <button class="sort-chip" data-sort="rating">الأعلى تقييماً</button>
@@ -45,15 +45,12 @@
     <button class="sort-chip" data-sort="title">أبجدياً</button>
   </div>
 
-  <!-- ===== عدّاد النتائج ===== -->
   <div class="results-count" id="resultsCount"></div>
 
-  <!-- ===== شبكة الألعاب ===== -->
-  <main class="games-grid" id="gamesGrid">
-    <!-- ستُضاف البطاقات هنا تلقائياً -->
-  </main>
+  <!-- ===== الشبكة ===== -->
+  <main class="games-grid" id="gamesGrid"></main>
 
-  <!-- ===== شريط التنقل السفلي ===== -->
+  <!-- ===== التنقل السفلي ===== -->
   <nav class="bottom-nav">
     <button class="nav-btn active" data-view="all">
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
@@ -84,7 +81,7 @@
     </button>
   </nav>
 
-  <!-- ===== طبقة تفاصيل اللعبة ===== -->
+  <!-- ===== صفحة التفاصيل ===== -->
   <div class="detail-overlay" id="detailOverlay">
     <div class="detail-sheet" id="detailSheet">
       <button class="detail-close" id="detailClose" aria-label="إغلاق">
@@ -121,6 +118,7 @@
           <div class="stat">
             <span class="stat-label">التقييم</span>
             <span class="stat-value rating" id="detailRating"></span>
+            <div class="rating-bar"><div class="rating-bar-fill" id="ratingBarFill"></div></div>
           </div>
           <div class="stat">
             <span class="stat-label">تاريخ الإصدار</span>
@@ -136,16 +134,18 @@
           </div>
         </div>
 
-        <!-- حاوية روابط التحميل (تُملأ ديناميكياً) -->
         <div class="downloads-wrap" id="downloadsWrap"></div>
 
-        <!-- ملاحظاتي -->
         <div class="detail-notes-wrap">
           <h3 class="detail-subtitle">ملاحظاتي</h3>
           <p class="detail-notes" id="detailNotes"></p>
         </div>
 
-        <!-- التعليقات -->
+        <div class="suggested-wrap" id="suggestedWrap">
+          <h3 class="detail-subtitle">ألعاب مشابهة</h3>
+          <div class="suggested-list" id="suggestedList"></div>
+        </div>
+
         <div class="comments-wrap" id="commentsWrap">
           <h3 class="detail-subtitle">تعليقات اللاعبين</h3>
           <div class="comments-list" id="commentsList"></div>
