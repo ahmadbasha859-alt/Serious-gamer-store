@@ -1,13 +1,16 @@
 /* ==========================================
-   SERIOUS GAMER — التصميم الكامل
+   SERIOUS GAMER — التصميم الكامل المحسّن
    ========================================== */
 
-/* إعادة الضبط */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -69,7 +72,6 @@ body {
   position: relative;
 }
 
-/* خلفية متوهجة */
 .bg-glow {
   position: fixed;
   top: -200px;
@@ -158,6 +160,30 @@ body.light .bg-glow {
   letter-spacing: 0.3px;
 }
 
+.last-update {
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.last-update::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
 .icon-btn {
   width: 42px;
   height: 42px;
@@ -216,7 +242,7 @@ body.light .bg-glow {
   box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
-/* ===== شريط الترتيب ===== */
+/* ===== الترتيب ===== */
 .sort-bar {
   display: flex;
   gap: 8px;
@@ -295,8 +321,23 @@ body.light .bg-glow {
 }
 
 .game-card:active {
-  transform: scale(0.96);
+  transform: scale(0.95) rotate(-0.5deg);
   border-color: var(--accent);
+}
+
+.game-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: calc(var(--radius) + 2px);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+}
+
+.game-card:active::before {
+  opacity: 0.4;
 }
 
 @keyframes fadeUp {
@@ -319,7 +360,6 @@ body.light .bg-glow {
   overflow: hidden;
 }
 
-/* توهج داخلي على الغلاف */
 .game-cover::after {
   content: '';
   position: absolute;
@@ -347,7 +387,6 @@ body.light .bg-glow {
   filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.4));
 }
 
-/* أنماط هندسية */
 .game-cover::before {
   content: '';
   position: absolute;
@@ -380,7 +419,7 @@ body.light .bg-glow {
   display: none;
 }
 
-/* شارة الحالة على الغلاف */
+/* شارة الحالة */
 .cover-status {
   position: absolute;
   top: 8px;
@@ -391,8 +430,9 @@ body.light .bg-glow {
   font-weight: 800;
   color: #fff;
   z-index: 4;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   letter-spacing: 0.3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
@@ -426,13 +466,35 @@ body.light .bg-glow {
   height: 11px;
 }
 
+/* شارة "جديد" */
+.game-card[data-new="true"] .game-cover::after {
+  content: 'جديد';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff4d6d, #ff8c42);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 900;
+  z-index: 6;
+  box-shadow: 0 2px 8px rgba(255, 77, 109, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
 /* زر المفضلة */
 .card-fav-btn {
   position: absolute;
   top: 8px;
   left: 8px;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(8px);
@@ -445,6 +507,10 @@ body.light .bg-glow {
   z-index: 5;
   color: rgba(255, 255, 255, 0.85);
   transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+.game-card[data-new="true"] .card-fav-btn {
+  top: 40px;
 }
 
 .card-fav-btn:active {
@@ -480,6 +546,10 @@ body.light .bg-glow {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 5px;
+  background: linear-gradient(135deg, var(--text) 60%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .game-meta {
@@ -503,7 +573,7 @@ body.light .bg-glow {
   flex-shrink: 0;
 }
 
-/* ===== شريط التنقل السفلي ===== */
+/* ===== التنقل السفلي ===== */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -593,6 +663,11 @@ body.light .bg-glow {
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   padding-bottom: calc(24px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--border);
+  scrollbar-width: none;
+}
+
+.detail-sheet::-webkit-scrollbar {
+  display: none;
 }
 
 .detail-overlay.open .detail-sheet {
@@ -603,8 +678,8 @@ body.light .bg-glow {
   position: absolute;
   top: 14px;
   right: 14px;
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(10px);
@@ -804,227 +879,4 @@ body.light .bg-glow {
   color: var(--accent);
 }
 
-/* روابط التحميل */
-.downloads-wrap {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 18px;
-}
-
-.downloads-title {
-  font-size: 13px;
-  color: var(--text-dim);
-  font-weight: 800;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.downloads-title::before {
-  content: '';
-  width: 3px;
-  height: 14px;
-  background: linear-gradient(180deg, var(--accent), var(--accent-2));
-  border-radius: 2px;
-}
-
-.download-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-  padding: 13px 15px;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  color: var(--text);
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  margin-bottom: 8px;
-  transition: transform 0.18s, border-color 0.2s, background 0.2s;
-}
-
-.download-btn:last-child {
-  margin-bottom: 0;
-}
-
-.download-btn:active {
-  transform: scale(0.98);
-  border-color: var(--accent);
-  background: var(--accent-soft);
-}
-
-.download-btn .source-name {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.download-btn .source-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 8px currentColor;
-}
-
-.download-btn .source-dot.mega { background: #d9272e; box-shadow: 0 0 10px #d9272e; }
-.download-btn .source-dot.mediafire { background: #1299f3; box-shadow: 0 0 10px #1299f3; }
-.download-btn .source-dot.drive { background: #34a853; box-shadow: 0 0 10px #34a853; }
-.download-btn .source-dot.apkpure { background: #ff6a00; box-shadow: 0 0 10px #ff6a00; }
-.download-btn .source-dot.other { background: #8b5cf6; box-shadow: 0 0 10px #8b5cf6; }
-
-.download-btn .ext-icon {
-  color: var(--text-dim);
-  font-size: 16px;
-  line-height: 1;
-}
-
-.downloads-empty {
-  font-size: 12px;
-  color: var(--text-dim);
-  text-align: center;
-  padding: 8px 0;
-}
-
-/* ملاحظاتي */
-.detail-notes-wrap {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 18px;
-}
-
-.detail-subtitle {
-  font-size: 13px;
-  color: var(--text-dim);
-  font-weight: 800;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.detail-subtitle::before {
-  content: '';
-  width: 3px;
-  height: 14px;
-  background: linear-gradient(180deg, var(--accent), var(--accent-2));
-  border-radius: 2px;
-}
-
-.detail-notes {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--text);
-}
-
-/* ===== التعليقات ===== */
-.comments-wrap {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 18px;
-}
-
-.comments-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.comment {
-  background: var(--surface-2);
-  border: 1px solid var(--border-soft);
-  border-radius: 12px;
-  padding: 12px 14px;
-  position: relative;
-}
-
-.comment-head {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-
-.comment-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: 900;
-  color: #fff;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-}
-
-.comment-info {
-  flex: 1;
-  min-width: 0;
-}
-
-.comment-name {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.comment-meta {
-  font-size: 10.5px;
-  color: var(--text-dim);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 1px;
-}
-
-.comment-sentiment {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  font-weight: 700;
-}
-
-.comment-sentiment.positive { color: var(--green); }
-.comment-sentiment.negative { color: var(--red); }
-
-.comment-body {
-  font-size: 13px;
-  line-height: 1.65;
-  color: var(--text);
-}
-
-.comment-body .dialect-tag {
-  display: inline-block;
-  font-size: 9.5px;
-  padding: 1px 6px;
-  border-radius: 6px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-weight: 700;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
-/* شريط تمرير أنيق */
-.detail-sheet::-webkit-scrollbar {
-  width: 4px;
-}
-
-.detail-sheet::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 2px;
-}
+/* شري
