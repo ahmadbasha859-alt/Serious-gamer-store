@@ -245,4 +245,38 @@ const games = [
       { name: "علي كربلائي", dialect: "عراقي", sentiment: "negative", rating: 3, text: "حملت الملفات بس ما اشتغلت أول مرة، لازم ترتب المجلدات زين. بعد التعديل اشتغلت." }
     ]
   }
+  {
+  id: 8,
+  title: "Rusted Warfare (Generals Zero Hour Mod)",
+  titleAr: "رستد وورفير - مود جنرالز زيرو آور",
+  developer: "Corroding Games / Mod Community",
+  genre: "RTS / Strategy",
+  status: "playing",
+  rating: 9.2,
+  date: "2017-11-15",
+  size: "150 MB + Mod",
+  downloadCount: 28700,
+  notes: "لعبة استراتيجية RTS كلاسيكية بأسلوب Command & Conquer، مع مود Generals Zero Hour الشهير الذي يضيف جيوشاً ووحدات من اللعبة الأصلية. تعمل أوفلاين وخفيفة على الأجهزة.",
+  cover: {
+    colorA: "#8b5a2b",
+    colorB: "#2a1a08",
+    pattern: "grid",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 80 L80 80"/>
+      <path d="M30 80 L30 55 L50 40 L70 55 L70 80"/>
+      <path d="M42 80 L42 65 L58 65 L58 80"/>
+      <circle cx="50" cy="28" r="10"/>
+      <path d="M50 18 L50 8"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "apkvision", name: "APKVision (APK v1.15.180)", url: "https://apkvision.org/games/strategy/rusted-warfare-rts-strategy-12366/download/v1.15.180-apk/" },
+    { source: "drive", name: "Google Drive (Mod - Generals Zero Hour)", url: "https://drive.google.com/file/d/1jfbKLbPYCmK51VUsUZYil6ph1SOtrJJ2/view" }
+  ],
+  comments: [
+    { name: "مهند البصري", dialect: "عراقي", sentiment: "positive", rating: 5, text: "أحلى لعبة RTS على الموبايل، ومود جنرالز رجّعني لأيام الكمبيوتر. تحكم سلس وبدون نت." },
+    { name: "أيمن جابري", dialect: "مصري", sentiment: "positive", rating: 5, text: "مود جنرالز زيرو آور ناقصها بس multiplayer أونلاين، غير كده اللعبة تحفة فنية." },
+    { name: "سامي المعلمي", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن تركيب المود صعيب شوية على المبتدئين، خاصك تتبع الشرح مزيان." }
+  ]
+     }
 ];
