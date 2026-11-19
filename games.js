@@ -270,7 +270,7 @@ const games = [
       </svg>`
     },
     downloads: [
-      { source: "apkvision", name: "APKVision (APK v1.15.180)", url: "https://apkvision.org/games/strategy/rusted-warfare-rts-strategy-12366/download/v1.15.180-apk/" },
+      { source: "apkpure", name: "APKVision (APK v1.15.180)", url: "https://apkvision.org/games/strategy/rusted-warfare-rts-strategy-12366/download/v1.15.180-apk/" },
       { source: "drive", name: "Google Drive (Mod - Generals Zero Hour)", url: "https://drive.google.com/file/d/1jfbKLbPYCmK51VUsUZYil6ph1SOtrJJ2/view" }
     ],
     comments: [
@@ -341,6 +341,221 @@ const games = [
       { name: "يوسف الحلبي", dialect: "شامي", sentiment: "positive", rating: 5, text: "لعبة إدمان بشكل مو طبيعي! كل جولة بدك ترجع تلعب. الترجمة العربية ممتازة كمان." },
       { name: "خالد المصري", dialect: "مصري", sentiment: "positive", rating: 5, text: "أحلى لعبة بطاقات لعبتها في حياتي. فكرة الجوكرز والدمج عبقرية. ما فيش أحسن منها للتسلية." },
       { name: "فاطمة المغربية", dialect: "مغربي", sentiment: "neutral", rating: 4, text: "زوينة بزاف ولكن صعيبة شوية على اللي مابيعرفوش البوكر. خاصك تتعلم القواعد قبل." }
+    ]
+  },
+  {
+    id: 11,
+    title: "Stick War: Legacy",
+    titleAr: "ستيك وور: ليجاسي",
+    developer: "Max Games Studios",
+    genre: "Strategy / RTS",
+    status: "playing",
+    rating: 8.9,
+    date: "2016-11-17",
+    size: "90 MB",
+    downloadCount: 42500,
+    notes: "لعبة استراتيجية حربية بأسلوب الرسوم العصوية (Stickman). تبني جيشك، تجمع الذهب، وتدير معارك ضد قبائل الأعداء. النسخة المعدّلة تمنحك ذهباً وأحجاراً كريمة غير محدودة.",
+    cover: {
+      colorA: "#d97706",
+      colorB: "#2a1a05",
+      pattern: "lines",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="20" r="8"/>
+        <path d="M50 28 L50 55"/>
+        <path d="M50 35 L30 45"/>
+        <path d="M50 35 L70 45"/>
+        <path d="M50 55 L35 80"/>
+        <path d="M50 55 L65 80"/>
+        <path d="M70 45 L80 30"/>
+        <path d="M80 30 L88 24"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "other", name: "Google Play (النسخة الأصلية)", url: "https://play.google.com/store/apps/details?id=com.maxgames.stickwarlegacy" },
+      { source: "other", name: "AN1 (نسخة معدّلة - Mod APK)", url: "https://an1.com/3381-stick-war-legacy-mod-apk-free.html" }
+    ],
+    comments: [
+      { name: "أحمد المصري", dialect: "مصري", sentiment: "positive", rating: 5, text: "لعبة استراتيجية تحفة! فكرة الجيش العصوي بسيطة بس عميقة في التكتيك. النسخة المعدلة بتخليك تستمتع من غير انتظار." },
+      { name: "خالد العتيبي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "حلوة والله، أحسن شي فيها إنها خفيفة على الجوال وماتاخذ مساحة. بس ياليت المستويات أكثر." },
+      { name: "مريم التونسية", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن كتحس بالتكرار بعد مدة، كل المستويات كتشبه لبعضها." }
+    ]
+  },
+  {
+    id: 12,
+    title: "Serious Sam: The Second Encounter",
+    titleAr: "سيريوس سام: اللقاء الثاني",
+    developer: "Croteam",
+    genre: "First-Person Shooter",
+    status: "playing",
+    rating: 9.3,
+    date: "2002-02-05",
+    size: "450 MB",
+    downloadCount: 19400,
+    notes: "لعبة تصويب أسطورية بإيقاع جنوني. موجات لا تنتهي من الأعداء، أسلحة فتاكة، وأجواء أكشن خالص. نسخة البورت للأندرويد تقدم التجربة كاملة مع تحكم لمسي معدّل.",
+    cover: {
+      colorA: "#c2410c",
+      colorB: "#2a0d03",
+      pattern: "grid",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="30"/>
+        <circle cx="50" cy="50" r="10"/>
+        <path d="M50 20 L50 40"/>
+        <path d="M50 60 L50 80"/>
+        <path d="M20 50 L40 50"/>
+        <path d="M60 50 L80 50"/>
+        <circle cx="50" cy="50" r="3" fill="currentColor"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "other", name: "AndroidApplications (APK)", url: "https://androidapplications.store/games/15647-serious-sam-the-second-encounter.html" }
+    ],
+    comments: [
+      { name: "عبدالله الحربي", dialect: "خليجي", sentiment: "positive", rating: 5, text: "سيريوس سام أسطورة! أكشن بلا توقف وقتال مجنون. تحس إنك بطل حقيقي وأنت تلعبها." },
+      { name: "حسن المصري", dialect: "مصري", sentiment: "positive", rating: 4, text: "لعبة أكشن بمعنى الكلمة، بتحس بالإثارة في كل لحظة. بس التحكم باللمس محتاج تعود شوية." },
+      { name: "كريم الجزائري", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن الرسومات قديمة شوية، وصعيب الواحد يتعود على التحكم." }
+    ]
+  },
+  {
+    id: 13,
+    title: "Crazy Taxi Classic",
+    titleAr: "كريزي تاكسي كلاسيك",
+    developer: "SEGA",
+    genre: "Racing / Arcade",
+    status: "done",
+    rating: 8.7,
+    date: "2013-07-10",
+    size: "150 MB",
+    downloadCount: 25800,
+    notes: "لعبة سباق تاكسي كلاسيكية من SEGA. توصيل الركاب بأسرع وقت مع حركات مجنونة وموسيقى الروك الأصلية. تجربة أركيد خالصة لا تفوت.",
+    cover: {
+      colorA: "#facc15",
+      colorB: "#3a2a02",
+      pattern: "dots",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 65 L15 55 Q15 48 22 48 L32 48 L40 32 L70 32 L78 48 L85 48 Q90 48 90 55 L90 65"/>
+        <path d="M15 65 L90 65"/>
+        <circle cx="30" cy="72" r="6"/>
+        <circle cx="75" cy="72" r="6"/>
+        <path d="M40 42 L50 42"/>
+        <path d="M55 42 L65 42"/>
+        <rect x="42" y="18" width="16" height="8" rx="2"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "apkpure", name: "APKVision (APK v5.1)", url: "https://apkvision.org/games/racing/crazy-taxi-classic-9751/download/v5.1-apk/" }
+    ],
+    comments: [
+      { name: "سعود القحطاني", dialect: "خليجي", sentiment: "positive", rating: 5, text: "لعبة الأركيد الأسطورية رجعت! ذكريات أيام السيجا. الموسيقى والسرعة تحس إنك في الأركيد فعلاً." },
+      { name: "رنا اللبنانية", dialect: "شامي", sentiment: "positive", rating: 4, text: "كتير حلوة ومسلية، بتسترجع أيام زمان مع السيجا. تحدي السرعة والحركات ممتع." },
+      { name: "أحمد الصعيدي", dialect: "مصري", sentiment: "negative", rating: 3, text: "اللعبة حلوة بس ناقصها بعض الأغاني الأصلية اللي كانت في النسخة الأولى. غير كده ممتازة." }
+    ]
+  },
+  {
+    id: 14,
+    title: "صراع الرؤساء",
+    titleAr: "صراع الرؤساء",
+    developer: "Unknown",
+    genre: "Fighting / Casual",
+    status: "playing",
+    rating: 8.4,
+    date: "2023-05-15",
+    size: "80 MB",
+    downloadCount: 22800,
+    notes: "لعبة قتال خفيفة ومسلية بشخصيات رؤساء. تحكم بسيط وأسلوب مرح. مثالية للتسلية السريعة في جلسات قصيرة.",
+    cover: {
+      colorA: "#b91c1c",
+      colorB: "#1a0505",
+      pattern: "lines",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="30" r="15"/>
+        <path d="M50 45 L50 75"/>
+        <path d="M50 55 L30 45"/>
+        <path d="M50 55 L70 45"/>
+        <path d="M50 75 L35 90"/>
+        <path d="M50 75 L65 90"/>
+        <path d="M38 22 L42 22"/>
+        <path d="M58 22 L62 22"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "other", name: "Google Play", url: "https://play.google.com/store/apps/details?id=president.kombat.fighting" }
+    ],
+    comments: [
+      { name: "يوسف بغدادي", dialect: "عراقي", sentiment: "positive", rating: 5, text: "لعبة مسلية وخفيفة، تصلح للتسلية السريعة. فكرة رؤساء يتقاتلون تحشيش مضبوط." },
+      { name: "منى المصرية", dialect: "مصري", sentiment: "positive", rating: 4, text: "حلوة للتسلية، بولادي بيحبوا يلعبوها. تحكم سهل وماتاخدش مساحة." },
+      { name: "فهد العنزي", dialect: "خليجي", sentiment: "negative", rating: 3, text: "حلوة كبداية بس تحتاج تطوير، الشخصيات قليلة والمستويات محدودة." }
+    ]
+  },
+  {
+    id: 15,
+    title: "Gunship Battle",
+    titleAr: "غانشيب باتل",
+    developer: "JOYCITY Corp.",
+    genre: "Action / Helicopter Combat",
+    status: "playing",
+    rating: 8.8,
+    date: "2014-11-01",
+    size: "650 MB",
+    downloadCount: 34700,
+    notes: "لعبة قتال مروحيات بجرافيكس ثلاثي الأبعاد ممتاز. قُد مروحيتك في مهام قتالية حول العالم، طوّر أسلحتك وحسّن أداءك. من أفضل ألعاب المروحيات على الموبايل.",
+    cover: {
+      colorA: "#2d5016",
+      colorB: "#0a1f08",
+      pattern: "grid",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 40 L80 40"/>
+        <path d="M50 40 L50 30"/>
+        <ellipse cx="50" cy="60" rx="14" ry="10"/>
+        <path d="M36 60 L20 55 L20 68 L36 68"/>
+        <path d="M64 60 L78 60 L78 65 L64 65"/>
+        <path d="M45 70 L45 82"/>
+        <path d="M55 70 L55 82"/>
+        <path d="M40 82 L60 82"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "other", name: "APKAward (Mod APK)", url: "https://apkaward.com/dwmod1?pid=1775" }
+    ],
+    comments: [
+      { name: "طارق بغدادي", dialect: "عراقي", sentiment: "positive", rating: 5, text: "أحلى لعبة مروحيات على الموبايل، الجرافيكس خيالي والمهام متنوعة. تحس إنك طيار حقيقي." },
+      { name: "خالد العتيبي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "قوية وعالمية، بس بعض المهام صعبة تحتاج تطوير العتاد أول." },
+      { name: "زينب البصراوية", dialect: "عراقي", sentiment: "negative", rating: 3, text: "حلوة بس حجمها كبير وتحتاج جهاز زين حتى تشتغل بسلاسة." }
+    ]
+  },
+  {
+    id: 16,
+    title: "CS Xtreme V6",
+    titleAr: "سي إس إكستريم V6",
+    developer: "Fan Mod Community",
+    genre: "First-Person Shooter",
+    status: "playing",
+    rating: 8.6,
+    date: "2023-08-10",
+    size: "800 MB",
+    downloadCount: 29700,
+    notes: "نسخة معدّلة (Mod) من Counter-Strike للأندرويد بمحتوى إضافي وخرائط جديدة. تجربة CS كلاسيكية على الموبايل مع تحسينات وإضافات من مجتمع اللاعبين.",
+    cover: {
+      colorA: "#78716c",
+      colorB: "#0c0a09",
+      pattern: "lines",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="32"/>
+        <circle cx="50" cy="50" r="12"/>
+        <path d="M50 18 L50 38"/>
+        <path d="M50 62 L50 82"/>
+        <path d="M18 50 L38 50"/>
+        <path d="M62 50 L82 50"/>
+        <circle cx="50" cy="50" r="3" fill="currentColor"/>
+        <path d="M68 32 L78 22"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "drive", name: "Google Drive (CS Xtreme V6)", url: "https://drive.usercontent.google.com/download?id=1EUAQJvbuDJra2zR7vG2HmKD3QEK0Afsi&export=download" }
+    ],
+    comments: [
+      { name: "أحمد المصري", dialect: "مصري", sentiment: "positive", rating: 5, text: "سي إس على الموبايل! نسخة معدلة بخرايط جديدة وحماس. تذكرني بأيام النت كافيه." },
+      { name: "عبدالله الحربي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "حلوة والله، بس التحكم باللمس صعب شوي في البداية. إذا تعودت عليها تصير ممتازة." },
+      { name: "مصطفى الطرابلسي", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن خاصها جهاز قوي، على الهاتف ديالي كتقطع شوية." }
     ]
   }
 ];
