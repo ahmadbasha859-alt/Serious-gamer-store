@@ -700,7 +700,7 @@ const games = [
     { name: "كريم الجزائري", dialect: "مغربي", sentiment: "negative", rating: 3, text: "الرسومات قديمة (PS2 style) والتحكم صعيب شوية، بس لللي كيبغي النوستالجيا راهي مليحة." }
   ]
 },
-  {
+{
   id: 21,
   title: "GTA: Vice City",
   titleAr: "جي تي إيه: فايس سيتي",
@@ -1005,6 +1005,290 @@ const games = [
     { name: "مهند البصري", dialect: "عراقي", sentiment: "positive", rating: 4, text: "لعبة بقاء حلوة بأجواء صحراوية، واللعب مع ناس ثانيين يضيف متعة. تصلح للتسلية مع الأصدقاء." },
     { name: "سارة دمشقية", dialect: "شامي", sentiment: "positive", rating: 4, text: "فكرة حلوة وجو الصحراء مميز. البقاء وجمع الموارد ممتع، بس بدها تحديثات إضافية." },
     { name: "أحمد المصري", dialect: "مصري", sentiment: "neutral", rating: 3, text: "حلوة كفكرة بس محتاجة تطوير، والمحتوى قليل شوية. تستاهل المتابعة بعد التحديثات." }
+  ]
+},
+{
+  id: 30,
+  title: "Super Fuser",
+  titleAr: "سوبر فيوزر",
+  developer: "Ruser Games",
+  genre: "Merge / Fusion / Action",
+  status: "playing",
+  rating: 8.4,
+  date: "2024-08-15",
+  size: "150 MB",
+  downloadCount: 46200,
+  notes: "لعبة دمج وتطوير مخلوقات بأسلوب سريع وممتع. تدمج كائنات لتكوين نسخ أقوى، تفتح أنواع جديدة، وتخوض معارك ضد أعداء متزايدين. جرافيكس ثلاثي الأبعاد وإيقاع لعب مشوق، مناسبة للتسلية القصيرة والمتوسطة.",
+  cover: {
+    colorA: "#7c3aed",
+    colorB: "#1a0533",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="35" cy="55" r="14"/>
+      <circle cx="65" cy="55" r="14"/>
+      <circle cx="50" cy="35" r="12"/>
+      <path d="M50 23 L50 14"/>
+      <path d="M35 55 L50 45 L65 55"/>
+      <path d="M30 78 L70 78"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=com.rusergames.spiderfuser" }
+  ],
+  comments: [
+    { name: "نادر القحطاني", dialect: "خليجي", sentiment: "positive", rating: 5, text: "أدمنتها بسرعة! فكرة الدمج بسيطة بس فيها عمق، وكل ما تطور مخلوقاتك تحس بالإنجاز." },
+    { name: "ريم الأيوبي", dialect: "شامي", sentiment: "positive", rating: 4, text: "اللعبة حلوة والجرافيكس نظيف، بس بعد شوي بتحس بالتكرار. لو يضيفوا أحداث أسبوعية بتصير أحلى." },
+    { name: "محمود عبده", dialect: "مصري", sentiment: "neutral", rating: 3, text: "حلوة في أول ساعة، بعدها بتصير روتينية. محتاجة محتوى إضافي عشان تكمل." }
+  ]
+},
+{
+  id: 31,
+  title: "FIFA 16 Classic (Full Career & Tournament)",
+  titleAr: "فيفا 16 كلاسيك - وضع المسيرة والبطولات",
+  developer: "EA / Mod Community (TechJ5 / Gunggaming)",
+  genre: "Sports / Football",
+  status: "playing",
+  rating: 8.7,
+  date: "2024-05-20",
+  size: "1.4 GB (APK + DATA + OBB)",
+  downloadCount: 29400,
+  notes: "نسخة كلاسيكية معدّلة من FIFA 16 أوفلاين، تشمل وضع المسيرة الكامل والبطولات وكل الأطقم الأصلية. الملفات الثلاثة مضغوطة بصيغة 7z — تحتاج تطبيق مثل ZArchiver لفك الضغط. رتّب الملفات: APK تثبيت، DATA إلى Android/data، OBB إلى Android/obb.",
+  cover: {
+    colorA: "#0e7490",
+    colorB: "#042b2e",
+    pattern: "lines",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="50" r="32"/>
+      <path d="M50 30 L65 42 L58 62 L42 62 L35 42 Z"/>
+      <path d="M50 18 L50 30"/>
+      <path d="M78 38 L65 42"/>
+      <path d="M50 82 L42 62"/>
+      <path d="M22 62 L35 42"/>
+      <path d="M30 86 L70 86"/>
+      <path d="M35 14 L50 8 L65 14"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "mediafire", name: "MediaFire (APK - 7z)", url: "https://www.mediafire.com/file/jggl4ji24uje1i0/techj5gamesfifa16offline%25282%2529.7z/file" },
+    { source: "mediafire", name: "MediaFire (DATA - 7z)", url: "https://www.mediafire.com/file/827t9lnxmuh3phn/FIFA_16_THEME_ORIGINAL_FULL_TURNAMEN_MODE_CAREER_MODE_YouTube_Gunggaming_15.7z/file?dkey=led2ivumhey&r=1227" },
+    { source: "mediafire", name: "MediaFire (OBB - 7z)", url: "https://www.mediafire.com/file/mhaewwxd6d2ln04/FIFA-16-GABO.7z/file" }
+  ],
+  comments: [
+    { name: "هيثم الشاوي", dialect: "عراقي", sentiment: "positive", rating: 5, text: "أحسن نسخة كلاسيك جربتها. وضع المسيرة شغال كامل والانتقالات حقيقية. بس انتبه، الملفات 7z لازم ZArchiver." },
+    { name: "سناء بن حمودة", dialect: "مغربي", sentiment: "positive", rating: 4, text: "زوينة بزاف واللعب سلس، ولكن خاصك تكون دقيق فترتيب المجلدات. أنا غلطت أول مرة وأعدت من جديد." },
+    { name: "راكان المطيري", dialect: "خليجي", sentiment: "negative", rating: 3, text: "اللعبة حلوة بس النصب معقد شوي ويبي له صبر. ياليت يخلون شرح واضح للخطوات بدل التخمين." }
+  ]
+},
+{
+  id: 32,
+  title: "Pocket Build",
+  titleAr: "بوكِت بيلد",
+  developer: "MoonBear LTD",
+  genre: "Sandbox / Building",
+  status: "done",
+  rating: 8.9,
+  date: "2018-03-15",
+  size: "200 MB",
+  downloadCount: 125000,
+  notes: "لعبة بناء ساندبوكس بسيطة وساحرة. تبني أي شيء تتخيله في عالم ثلاثي الأبعاد صغير بلا قيود شبكية أو خرائط جاهزة. آلاف العناصر المتاحة، تحكم سلس، وتجربة هادئة وممتعة لمن يحب الإبداع.",
+  cover: {
+    colorA: "#0d9488",
+    colorB: "#042f2e",
+    pattern: "grid",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M25 35 L50 22 L75 35 L75 60 L50 73 L25 60 Z"/>
+      <path d="M25 35 L50 48 L75 35"/>
+      <path d="M50 48 L50 73"/>
+      <path d="M38 41 L50 48 L62 41"/>
+      <path d="M15 82 L85 82"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=moonbear.PocketBuild" }
+  ],
+  comments: [
+    { name: "غيث الصفدي", dialect: "شامي", sentiment: "positive", rating: 5, text: "أحلى لعبة بناء على الموبايل. أنا بنيت قلعة كاملة بلا حدود، وحسيت إني معماري. بلا نت بلا وجع راس." },
+    { name: "شريف الجندي", dialect: "مصري", sentiment: "positive", rating: 4, text: "مريحة للأعصاب، بتبني على راحتك. بس ياريت يضيفوا عناصر أكثر وتفاعل أكثر مع العالم." },
+    { name: "آية المالكي", dialect: "عراقي", sentiment: "positive", rating: 5, text: "لعبة هادية وحلوة، بنيت بيها حديقة كاملة وأنا أسمع موسيقى. تنفع حق اللي يحب الإبداع والهدوء." }
+  ]
+},
+{
+  id: 33,
+  title: "World Soccer Champs",
+  titleAr: "وورلد سوكر تشامبس",
+  developer: "Monkey I-Brow Studios",
+  genre: "Sports / Football / Arcade",
+  status: "playing",
+  rating: 9.0,
+  date: "2019-05-10",
+  size: "150 MB",
+  downloadCount: 89000,
+  notes: "لعبة كرة قدم بأسلوب ريترو/بكسل آرت، بسيطة في الشكل عميقة في اللعب. تدير فريقك، تدرّب اللاعبين، وتلعب مباريات سريعة بإيقاع أركيد. تجربة ممتعة بعيدة عن تعقيد ألعاب الكرة الكبيرة.",
+  cover: {
+    colorA: "#16a34a",
+    colorB: "#052e16",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="52" r="26"/>
+      <path d="M50 36 L60 44 L56 56 L44 56 L40 44 Z"/>
+      <path d="M50 26 L50 36"/>
+      <path d="M72 40 L60 44"/>
+      <path d="M72 62 L56 56"/>
+      <path d="M50 78 L44 56"/>
+      <path d="M28 62 L40 44"/>
+      <path d="M28 40 L50 26"/>
+      <path d="M20 88 L80 88"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=com.monkeyibrow.worldsoccerchamps" }
+  ],
+  comments: [
+    { name: "وسام الريفي", dialect: "مغربي", sentiment: "positive", rating: 5, text: "أحسن لعبة كرة على الموبايل من ناحية البساطة والمتعة. ما كتحتاج نت ولا جهاز قوي، وغير هكا اللعب سريع وممتع." },
+    { name: "بدر السالم", dialect: "خليجي", sentiment: "positive", rating: 4, text: "أسلوب البكسل آرت رهيب، والمباريات سريعة. بس فيه بعض الأخطاء البسيطة في الذكاء الاصطناعي للخصم." },
+    { name: "ريما القيسي", dialect: "شامي", sentiment: "neutral", rating: 3, text: "اللعبة حلوة بس بدها محتوى أكتر. بعد فترة بتحس إنك عم تعيد نفس الشي، بدها بطولات وأحداث جديدة." }
+  ]
+},
+{
+  id: 34,
+  title: "Stick Warfare: Blood Strike",
+  titleAr: "ستيك وورفير: بلود سترايك",
+  developer: "Team Modernator Games",
+  genre: "Action / Stickman Shooter",
+  status: "playing",
+  rating: 9.3,
+  date: "2020-05-10",
+  size: "126 MB",
+  downloadCount: 15000000,
+  notes: "لعبة تصويب عصوية (Stickman) سريعة الإيقاع مع طور تعاوني أونلاين. قتال مباشر، تطوير أسلحة، وموجات أعداء لا تتوقف. من أنجح ألعاب الأكشن الخفيفة على الأندرويد بأكثر من 15 مليون تحميل وتقييم 4.7 نجوم.",
+  cover: {
+    colorA: "#dc2626",
+    colorB: "#1a0505",
+    pattern: "lines",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="22" r="8"/>
+      <path d="M50 30 L50 55"/>
+      <path d="M50 35 L32 45"/>
+      <path d="M50 35 L68 45"/>
+      <path d="M50 55 L38 78"/>
+      <path d="M50 55 L62 78"/>
+      <path d="M68 45 L78 30"/>
+      <path d="M78 30 L86 24"/>
+      <path d="M20 90 L80 90"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=me.modernator.stickWarfareBloodStrike" }
+  ],
+  comments: [
+    { name: "عادل الشهري", dialect: "خليجي", sentiment: "positive", rating: 5, text: "أفضل لعبة ستيكمان على الجوال. سريعة وممتعة، واللعب مع الأصدقاء أونلاين يضاعف المتعة." },
+    { name: "دانة العلي", dialect: "شامي", sentiment: "neutral", rating: 3, text: "حلوة بالأول بس بعدين بتصير صعبة كتير بدون ما تدفع. نظام التطوير بحاجة توازن." },
+    { name: "سيف الدين التميمي", dialect: "مغربي", sentiment: "positive", rating: 4, text: "اللعب سلس والتحكم ممتاز، ولكن خاصك جهاز مزيان باش ما يكونش لاغ فالمعارك الكبيرة." }
+  ]
+},
+{
+  id: 35,
+  title: "السجل المدني - The Registry",
+  titleAr: "السجل المدني",
+  developer: "Fiki / Mohammed Ibrahem",
+  genre: "Simulation / Puzzle",
+  status: "done",
+  rating: 8.0,
+  date: "2026-08-17",
+  size: "57 MB",
+  downloadCount: 150000,
+  notes: "محاكي بيروقراطية مصرية بأسلوب البكسل آرت. أنت الموظف خلف الشباك: راجع أوراق المواطنين، قارن البيانات، واكتشف الأخطاء قبل الختم. أختم أخضر للقبول أو أحمر للرفض، وارتقِ في الرتب. واجهة عربية وإنجليزية.",
+  cover: {
+    colorA: "#78716c",
+    colorB: "#1c1917",
+    pattern: "grid",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="25" y="20" width="50" height="60" rx="3"/>
+      <path d="M35 35 L65 35"/>
+      <path d="M35 45 L60 45"/>
+      <path d="M35 55 L55 55"/>
+      <circle cx="50" cy="70" r="6"/>
+      <path d="M47 70 L49 72 L53 68"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "mediafire", name: "MediaFire (APK)", url: "https://www.mediafire.com/file/fdy9ep76oqyekid/the-registry-android_Mac-Topia.com.apk/file" }
+  ],
+  comments: [
+    { name: "نور الهاشمي", dialect: "عراقي", sentiment: "positive", rating: 4, text: "فكرة غريبة بس حلوة! تحس حالك موظف حقيقي. الأخطاء بالبيانات تخليك تركز، والختم الأحمر والأخضر يضحك." },
+    { name: "جاسم الكويتي", dialect: "خليجي", sentiment: "neutral", rating: 3, text: "مسلية كتجربة، بس تكرر نفسها بسرعة. لو يضيفون أنواع أوراق أكثر بتصير أحلى." },
+    { name: "لمى الشمري", dialect: "خليجي", sentiment: "negative", rating: 2, text: "ما فهمت الهدف منها بسرعة، والإرشادات قليلة. حسيتها مملة بعد أول عشر دقايق." }
+  ]
+},
+{
+  id: 36,
+  title: "Monster Hunter Stories",
+  titleAr: "مونستر هانتر ستوريز",
+  developer: "CAPCOM Co., Ltd.",
+  genre: "RPG / Adventure",
+  status: "playing",
+  rating: 8.8,
+  date: "2018-09-25",
+  size: "2 GB + OBB",
+  downloadCount: 52000,
+  notes: "الجزء الأول من سلسلة RPG الأسطورية من كابكوم. اجمع بيض المونستيز، افقسها، ودرّبها لتصبح رفيقك في المعارك. قصة صداقة ومغامرة في عالم مونستر هانتر بجرافيكس عالي الدقة وواجهة محسّنة للأندرويد.",
+  cover: {
+    colorA: "#ca8a04",
+    colorB: "#1a1204",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="50" cy="45" rx="16" ry="22"/>
+      <path d="M34 38 L22 28"/>
+      <path d="M66 38 L78 28"/>
+      <path d="M40 55 L35 68"/>
+      <path d="M60 55 L65 68"/>
+      <path d="M50 67 L50 82"/>
+      <circle cx="44" cy="42" r="3" fill="currentColor"/>
+      <circle cx="56" cy="42" r="3" fill="currentColor"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "apkpure", name: "APKVision (APK v1.0.5)", url: "https://apkvision.org/games/role-playing/monster-hunter-stories-22740/download/v1.0.5-apk/" },
+    { source: "apkpure", name: "APKVision (OBB v1.0.5)", url: "https://apkvision.org/games/role-playing/monster-hunter-stories-22740/download/v1.0.5-obb/" }
+  ],
+  comments: [
+    { name: "حاتم الزبيدي", dialect: "عراقي", sentiment: "positive", rating: 5, text: "أحلى RPG على الجوال! جمع البيض وتدريب المونستيز إدمان، والقصة حلوة. تستاهل كل ميجا من حجمها." },
+    { name: "شذى العبدلي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "اللعبة ممتعة والجرافيكس حلو، بس تحتاج مساحة كبيرة وتحميلها يبي له نت قوي. بعد التثبيت التجربة تستاهل." },
+    { name: "رافت السامرائي", dialect: "عراقي", sentiment: "negative", rating: 3, text: "حلوة بس حسيتها مكررة شوية، والمعارك تحتاج وقت طويل. ما تناسب اللي يحب الأكشن السريع." }
+  ]
+},
+{
+  id: 37,
+  title: "Mimicry: Online Horror Action",
+  titleAr: "ميميكري: رعب أونلاين",
+  developer: "Euphoria Horror Games / Anton Nazarov",
+  genre: "Horror / Action / Battle Royale",
+  status: "playing",
+  rating: 8.4,
+  date: "2021-10-01",
+  size: "111 MB",
+  downloadCount: 10000000,
+  notes: "لعبة رعب غير متماثلة (8 ضد 1). وحش واحد يطارد ثمانية ناجين، والوحش قادر يتحول لشكل أي لاعب فيهم. تعاون مع أصدقائك بالصوت، أكمل المهام، واهرب — أو كن الوحش واصطدهم. 3 خرائط وأسلوب لعب مشوق.",
+  cover: {
+    colorA: "#4c1d95",
+    colorB: "#0a021a",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M25 60 Q25 30 50 30 Q75 30 75 60 Q75 80 50 85 Q25 80 25 60 Z"/>
+      <circle cx="40" cy="50" r="5" fill="currentColor"/>
+      <circle cx="60" cy="50" r="5" fill="currentColor"/>
+      <path d="M42 65 L50 72 L58 65"/>
+      <path d="M30 30 L25 18"/>
+      <path d="M70 30 L75 18"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=com.eg.mimicry.horror.online" }
+  ],
+  comments: [
+    { name: "مروة الفقيه", dialect: "شامي", sentiment: "positive", rating: 5, text: "أحلى لعبة رعب أونلاين جربتها! فكرة إن الوحش يتنكر بشكل أي لاعب بتخليك تشك بكل حدا. مع الأصدقاء بتجنن." },
+    { name: "بشار الخطيب", dialect: "شامي", sentiment: "positive", rating: 4, text: "اللعب ممتع والتوتر عالي، بس أحياناً الماتش ما يبدا بسرعة. لو يظبطوا السيرفرات بتصير ممتازة." },
+    { name: "هند العتيبي", dialect: "خليجي", sentiment: "neutral", rating: 3, text: "حلوة كفكرة، بس التحكم بالجوال صعب شوي والوحش أحياناً يكون أقوى من اللازم. تحتاج توازن أكثر." }
   ]
 }
 ];
