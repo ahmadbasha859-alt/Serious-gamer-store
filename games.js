@@ -699,5 +699,312 @@ const games = [
     { name: "مصطفى الطرابلسي", dialect: "مغربي", sentiment: "positive", rating: 4, text: "زوينة بزاف وخفیفة، ولكن خاصك محاكي ePSXe باش تشغلها. بعد التركيب كتخدم مزيان." },
     { name: "كريم الجزائري", dialect: "مغربي", sentiment: "negative", rating: 3, text: "الرسومات قديمة (PS2 style) والتحكم صعيب شوية، بس لللي كيبغي النوستالجيا راهي مليحة." }
   ]
+},
+  {
+  id: 21,
+  title: "GTA: Vice City",
+  titleAr: "جي تي إيه: فايس سيتي",
+  developer: "Rockstar Games",
+  genre: "Open World Action",
+  status: "playing",
+  rating: 9.5,
+  date: "2012-12-06",
+  size: "1.5 GB",
+  downloadCount: 68400,
+  notes: "أسطورة العالم المفتوح في الثمانينيات! مدينة فايس سيتي بأجوائها الاستوائية وموسيقاها الرائعة، وقصة تومي فيرسيتي في عالم الجريمة. نسخة الأندرويد الأصلية من Rockstar تعمل بسلاسة وتقدم التجربة كاملة على الهاتف.",
+  cover: {
+    colorA: "#ec4899",
+    colorB: "#1a0514",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 65 L15 55 Q15 48 22 48 L32 48 L42 32 L72 32 L80 48 L85 48 Q90 48 90 55 L90 65"/>
+      <path d="M15 65 L90 65"/>
+      <circle cx="30" cy="72" r="6"/>
+      <circle cx="75" cy="72" r="6"/>
+      <path d="M42 42 L52 42"/>
+      <path d="M58 42 L68 42"/>
+      <circle cx="50" cy="18" r="8"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "apkpure", name: "APKVision (APK v1.12)", url: "https://apkvision.org/games/action/grand-theft-auto-vice-city-apk-2820/" }
+  ],
+  comments: [
+    { name: "أحمد المصري", dialect: "مصري", sentiment: "positive", rating: 5, text: "يا جدعان دي تحفة! فايس سيتي والموسيقى والأجواء، تحس إنك عايش في التمانينات فعلاً. شغالة زي الفل على الأندرويد." },
+    { name: "خالد العتيبي", dialect: "خليجي", sentiment: "positive", rating: 5, text: "أفضل لعبة GTA من ناحية الجو والموسيقى. المهمات ممتعة والسيارة والمطاردة ما لها حل. نسخة روكستار تستاهل." },
+    { name: "يوسف الحلبي", dialect: "شامي", sentiment: "positive", rating: 4, text: "كتير حلوة والذكريات رجعت، بس التحكم باللمس بدو شوية تعود. غير هيك اللعبة أسطورة." }
+  ]
+},
+{
+  id: 22,
+  title: "GTA: Vice City Definitive Edition",
+  titleAr: "جي تي إيه: فايس سيتي - النسخة المعادة",
+  developer: "Rockstar Games / Grove Street Games",
+  genre: "Open World Action",
+  status: "playing",
+  rating: 8.3,
+  date: "2023-12-14",
+  size: "3 GB",
+  downloadCount: 42300,
+  notes: "النسخة المعادة (Definitive) من فايس سيتي بجرافيكس محدّث وإضاءة جديدة وتحكم محسّن. القصة والمهام نفسها، لكن الأداء على بعض الأجهزة يحتاج تعديل جرافيكس. تجربة مثيرة لمن يريد نسخة أحدث بصرياً.",
+  cover: {
+    colorA: "#f472b6",
+    colorB: "#3a0a24",
+    pattern: "lines",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 65 L15 55 Q15 48 22 48 L32 48 L42 32 L72 32 L80 48 L85 48 Q90 48 90 55 L90 65"/>
+      <path d="M15 65 L90 65"/>
+      <circle cx="30" cy="72" r="6"/>
+      <circle cx="75" cy="72" r="6"/>
+      <path d="M42 42 L52 42"/>
+      <path d="M58 42 L68 42"/>
+      <path d="M75 12 L77 18 L83 20 L77 22 L75 28 L73 22 L67 20 L73 18 Z"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "apkpure", name: "APKVision (APK v1.0)", url: "https://apkvision.org/games/action/gta-vice-city-definitive-115249/" }
+  ],
+  comments: [
+    { name: "أحمد الصعيدي", dialect: "مصري", sentiment: "positive", rating: 4, text: "الجرافيكس أحلى من الأصلية بكتير، والمهام نفسها حلوة. بس محتاجة موبايل قوي شوية عشان تشتغل بسلاسة." },
+    { name: "سعود القحطاني", dialect: "خليجي", sentiment: "negative", rating: 3, text: "النسخة الأصلية أحسن منها بصراحة. النسخة دي فيها مشاكل أداء وبعض الأخطاء، يبي لها تحديثات." },
+    { name: "كريم الجزائري", dialect: "مغربي", sentiment: "positive", rating: 4, text: "النسخة المعادة زوينة والتحكم تحسّن بزاف، ولكن خاصك جهاز قوي باش تخدم مزيان." }
+  ]
+},
+{
+  id: 23,
+  title: "Undertale (Arabic)",
+  titleAr: "أندرتيل - النسخة العربية",
+  developer: "Toby Fox / Arabic Translation Community",
+  genre: "RPG / Adventure",
+  status: "playing",
+  rating: 9.7,
+  date: "2018-09-15",
+  size: "200 MB",
+  downloadCount: 51800,
+  notes: "تحفة فنية RPG بلا منازع. اختياراتك تلعب دوراً في القصة، ونظام المعارك يعتمد على الرحمة أو القتال. النسخة العربية مترجمة بالكامل وتقدم تجربة كاملة. لعبة لازم تجربها مرة واحدة على الأقل في حياتك.",
+  cover: {
+    colorA: "#dc2626",
+    colorB: "#1a0606",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M50 78 L30 58 Q22 50 22 40 Q22 28 34 28 Q44 28 50 38 Q56 28 66 28 Q78 28 78 40 Q78 50 70 58 Z"/>
+      <path d="M40 42 L44 42"/>
+      <path d="M56 42 L60 42"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "mediafire", name: "MediaFire (APK عربي)", url: "https://www.mediafire.com/download/hl9q7exqfltpo5f" }
+  ],
+  comments: [
+    { name: "يوسف الحلبي", dialect: "شامي", sentiment: "positive", rating: 5, text: "لعبة ما بتتنسي، القصة عميقة والشخصيات بتعلق بقلبك. الترجمة العربية ممتازة وسهّلت الفهم كتير." },
+    { name: "منى المصرية", dialect: "مصري", sentiment: "positive", rating: 5, text: "أحلى لعبة اندي جربتها، اختياراتك في القصة بتفرق فعلاً. لو مش لاعبتها لازم تجربها على طول." },
+    { name: "فهد العنزي", dialect: "خليجي", sentiment: "neutral", rating: 4, text: "حلوة والفكرة مبتكرة، بس نظام المعارك بالقلب يحتاج وقت للتعود. الترجمة ساعدتني أفهم القصة زين." }
+  ]
+},
+{
+  id: 24,
+  title: "Dead Wasteland Survival",
+  titleAr: "دِد وَيستلاند - البقاء",
+  developer: "Just For Fun Games",
+  genre: "Survival / Action",
+  status: "done",
+  rating: 8.3,
+  date: "2023-06-10",
+  size: "500 MB",
+  downloadCount: 23400,
+  notes: "لعبة بقاء في عالم ما بعد الكارثة. اجمع الموارد، اصنع أدواتك، وابنِ ملجأك، وقاتل الزومبي والأعداء. أسلوبها بسيط وممتع، وتصلح للجلسات القصيرة والطويلة على حد سواء.",
+  cover: {
+    colorA: "#92400e",
+    colorB: "#1a0e05",
+    pattern: "grid",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30 30 Q30 15 50 15 Q70 15 70 30 L70 42 Q70 58 50 70 Q30 58 30 42 Z"/>
+      <circle cx="40" cy="38" r="4" fill="currentColor"/>
+      <circle cx="60" cy="38" r="4" fill="currentColor"/>
+      <path d="M42 52 L50 58 L58 52"/>
+      <path d="M45 70 L45 85"/>
+      <path d="M55 70 L55 85"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=com.JustForFunGames.Wasteland" }
+  ],
+  comments: [
+    { name: "طارق بغدادي", dialect: "عراقي", sentiment: "positive", rating: 4, text: "لعبة بقاء حلوة ومسلية، بناء الملجأ وصناعة الأدوات ممتعين. تصلح للتسلية بالجلسات القصيرة." },
+    { name: "حسن المصري", dialect: "مصري", sentiment: "positive", rating: 4, text: "أسلوبها بسيط وممتع، والزومبي والأعداء بيخلوا اللعبة مشوقة. بس ياريت الخرايط أكتر شوية." },
+    { name: "عبدالله الحربي", dialect: "خليجي", sentiment: "negative", rating: 3, text: "حلوة كبداية بس فيها تكرار شوي وتحتاج محتوى إضافي وتحديثات، ومع الوقت تحس بالرتابة." }
+  ]
+},
+{
+  id: 25,
+  title: "Kingdom Two Crowns",
+  titleAr: "كينغدم تو كراونز",
+  developer: "Raw Fury / Noio",
+  genre: "Strategy / Simulation",
+  status: "playing",
+  rating: 9.0,
+  date: "2020-11-11",
+  size: "500 MB",
+  downloadCount: 28900,
+  notes: "لعبة استراتيجية بأسلوب فني بسيط وعميق. ابنِ مملكتك، اجمع الذهب، درّب جنودك، وصد موجات الأعداء ليلاً. جمالها في بساطتها. تعمل بشكل ممتاز على الأندرويد وتقدم تجربة ممتعة وهادئة.",
+  cover: {
+    colorA: "#d97706",
+    colorB: "#2a1a05",
+    pattern: "lines",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M25 70 L30 40 L40 55 L50 35 L60 55 L70 40 L75 70 Z"/>
+      <path d="M25 70 L75 70"/>
+      <path d="M35 78 L65 78"/>
+      <circle cx="50" cy="30" r="3" fill="currentColor"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "LiteAPKs (APK)", url: "https://liteapks.com/kingdom-two-crowns.html" }
+  ],
+  comments: [
+    { name: "رنا اللبنانية", dialect: "شامي", sentiment: "positive", rating: 5, text: "لعبة بتجنن! بسيطة بالشكل وعميقة باللعب. كل يوم تكتشف إشي جديد، والليل والأعداء بحاجة تخطيط." },
+    { name: "مصطفى الطرابلسي", dialect: "مغربي", sentiment: "positive", rating: 4, text: "اللعبة زوينة بزاف والستايل الفني رائع، ولكن صعيبة شوية على المبتدئين فالبداية." },
+    { name: "ماجد الشمري", dialect: "خليجي", sentiment: "positive", rating: 4, text: "حلوة ومريحة، تصلح للتسلية الهادية. إدارة المملكة والدفاع عن الأسوار ممتعة." }
+  ]
+},
+{
+  id: 26,
+  title: "Minecraft",
+  titleAr: "ماينكرافت",
+  developer: "Mojang Studios",
+  genre: "Sandbox / Survival",
+  status: "playing",
+  rating: 9.6,
+  date: "2011-11-18",
+  size: "800 MB",
+  downloadCount: 1520000,
+  notes: "أسطورة الساندبوكس! ابنِ أي شيء تتخيله في عالم مفتوح بلا حدود. وضع البقاء يضيف الزومبي والتعدين والحِرَف، ووضع الإبداع يمنحك موارد لا نهائية. لعبة ما تحتاج تعريف.",
+  cover: {
+    colorA: "#16a34a",
+    colorB: "#052e16",
+    pattern: "grid",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30 30 L50 20 L70 30 L70 50 L50 60 L30 50 Z"/>
+      <path d="M30 50 L50 60 L50 80 L30 70 Z"/>
+      <path d="M70 50 L50 60 L50 80 L70 70 Z"/>
+      <path d="M40 40 L50 45 L60 40"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "apkpure", name: "APKVision (APK v1.21)", url: "https://apkvision.org/games/arcade/minecraft-pe-apk-55409/" }
+  ],
+  comments: [
+    { name: "أحمد المصري", dialect: "مصري", sentiment: "positive", rating: 5, text: "ماينكرافت مش محتاجة كلام، أنا بلعبها من سنين وما زلت أكتشف حاجات جديدة. حرية كاملة وإبداع بلا حدود." },
+    { name: "خالد العتيبي", dialect: "خليجي", sentiment: "positive", rating: 5, text: "أفضل لعبة ساندبوكس على الإطلاق. تبني وتبدع وتسوي أي شي تبي. مع الأصدقاء تصير أحلى بعد." },
+    { name: "زينب البصراوية", dialect: "عراقي", sentiment: "positive", rating: 4, text: "حلوة ومسلية، ولادي يحبوها. تشتغل تمام على الأندرويد بس يبي لها جهاز زين حتى تشتغل بسلاسة." }
+  ]
+},
+{
+  id: 27,
+  title: "Zombie Hunter 2",
+  titleAr: "زومبي هانتر 2",
+  developer: "ONEMB",
+  genre: "Action / Shooter",
+  status: "playing",
+  rating: 8.5,
+  date: "2023-03-20",
+  size: "400 MB",
+  downloadCount: 35600,
+  notes: "لعبة تصويب ضد الزومبي بأسلوب أكشن سريع. أسلحة متنوعة، مستويات متعددة، وقتال مباشر ضد موجات الزومبي. مناسبة لمحبي ألعاب الأكشن والتحدي السريع على الموبايل.",
+  cover: {
+    colorA: "#b91c1c",
+    colorB: "#1a0505",
+    pattern: "grid",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="50" r="30"/>
+      <circle cx="50" cy="50" r="8"/>
+      <path d="M50 20 L50 42"/>
+      <path d="M50 58 L50 80"/>
+      <path d="M20 50 L42 50"/>
+      <path d="M58 50 L80 50"/>
+      <circle cx="50" cy="50" r="3" fill="currentColor"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=com.onemb.zombie.hunter" }
+  ],
+  comments: [
+    { name: "فهد العنزي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "أكشن سريع وحلو، وقتال الزومبي ممتع والأسلحة متنوعة. تصلح للتسلية السريعة في الاستراحة." },
+    { name: "منى المصرية", dialect: "مصري", sentiment: "positive", rating: 4, text: "حلوة للتسلية وولادي بيحبوها. القتال سريع وممتع، بس بعض المستويات صعبة أوي." },
+    { name: "علي كربلائي", dialect: "عراقي", sentiment: "neutral", rating: 3, text: "حلوة بس فيها تكرار شوية بالمستويات، وتحتاج تطوير بالمحتوى حتى تكون أحلى." }
+  ]
+},
+{
+  id: 28,
+  title: "FIFA 16 MOD PES 19",
+  titleAr: "فيفا 16 مود بيس 19",
+  developer: "EA / Mod Community (Technogamer)",
+  genre: "Sports / Football",
+  status: "playing",
+  rating: 8.8,
+  date: "2024-02-15",
+  size: "1.5 GB (APK + DATA + OBB)",
+  downloadCount: 31200,
+  notes: "نسخة معدّلة من FIFA 16 مع تحديثات PES 19 (انتقالات، أطقم، وجوه). تعمل أوفلاين بالكامل. طريقة التركيب: نصّب APK أولاً، ثم فك ضغط ملف DATA (كلمة السر: DATA PES 19 DIK YT) وضعه في مجلد Android/data، ثم ضع ملف OBB في مجلد Android/obb.",
+  cover: {
+    colorA: "#15803d",
+    colorB: "#052e16",
+    pattern: "lines",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="50" r="32"/>
+      <path d="M50 30 L65 42 L58 62 L42 62 L35 42 Z"/>
+      <path d="M50 18 L50 30"/>
+      <path d="M78 38 L65 42"/>
+      <path d="M78 62 L58 62"/>
+      <path d="M50 82 L42 62"/>
+      <path d="M22 62 L35 42"/>
+      <path d="M22 38 L50 18"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "MEGA (APK)", url: "https://mega.nz/file/AIRGGZRZ#Gj6FmBArsWfBF8Y0CM-ZEeF6iyXMGPN25IOJnZb_j1E" },
+    { source: "other", name: "MEGA (DATA - كلمة السر: DATA PES 19 DIK YT)", url: "https://mega.nz/file/8ZZHwDaA#m1kuIfhha4HeVXfOoOVA59jyBTpX5DA68fP0uaXU8G0" },
+    { source: "mediafire", name: "MediaFire (OBB)", url: "https://www.mediafire.com/file/4utp434unjjf7tj/com.ea.gp.fifaworld_technogamer.in.zip/file" }
+  ],
+  comments: [
+    { name: "كريم الجزائري", dialect: "مغربي", sentiment: "positive", rating: 5, text: "مود ممتاز! الانتقالات والأطقم محدثة واللعب أوفلاين بلا مشاكل. خاصك غير تتبع طريقة التركيب مزيان." },
+    { name: "حسن المصري", dialect: "مصري", sentiment: "positive", rating: 4, text: "حلوة جداً والتحديثات واضحة، بس الملفات كبيرة والتركيب محتاج شوية صبر. بعد ما ظبطت شغالة تمام." },
+    { name: "ماجد الشمري", dialect: "خليجي", sentiment: "negative", rating: 3, text: "اللعبة حلوة بس التركيب معقد شوي، خاصة كلمة السر ومكان الملفات. يبي لها شرح واضح عشان تشتغل صح." }
+  ]
+},
+{
+  id: 29,
+  title: "Red Dustland Online",
+  titleAr: "رد داستلاند أونلاين",
+  developer: "Virtual Studio",
+  genre: "Survival / Online",
+  status: "playing",
+  rating: 8.0,
+  date: "2024-04-01",
+  size: "600 MB",
+  downloadCount: 17800,
+  notes: "لعبة بقاء أونلاين في عالم صحراوي قاسٍ. اجمع الموارد، اصنع أدواتك، وتعاون أو تنافس مع لاعبين آخرين. تجربة بقاء اجتماعية بأسلوب بسيط وممتع.",
+  cover: {
+    colorA: "#dc2626",
+    colorB: "#3a0a05",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="35" r="12"/>
+      <path d="M50 20 L50 12"/>
+      <path d="M62 22 L68 16"/>
+      <path d="M38 22 L32 16"/>
+      <path d="M15 70 Q50 55 85 70"/>
+      <path d="M15 80 Q50 65 85 80"/>
+      <path d="M25 90 Q50 78 75 90"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "Google Play (النسخة الرسمية)", url: "https://play.google.com/store/apps/details?id=com.VirtualStudio.RedDustlands" }
+  ],
+  comments: [
+    { name: "مهند البصري", dialect: "عراقي", sentiment: "positive", rating: 4, text: "لعبة بقاء حلوة بأجواء صحراوية، واللعب مع ناس ثانيين يضيف متعة. تصلح للتسلية مع الأصدقاء." },
+    { name: "سارة دمشقية", dialect: "شامي", sentiment: "positive", rating: 4, text: "فكرة حلوة وجو الصحراء مميز. البقاء وجمع الموارد ممتع، بس بدها تحديثات إضافية." },
+    { name: "أحمد المصري", dialect: "مصري", sentiment: "neutral", rating: 3, text: "حلوة كفكرة بس محتاجة تطوير، والمحتوى قليل شوية. تستاهل المتابعة بعد التحديثات." }
+  ]
 }
 ];
