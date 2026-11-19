@@ -557,5 +557,147 @@ const games = [
       { name: "عبدالله الحربي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "حلوة والله، بس التحكم باللمس صعب شوي في البداية. إذا تعودت عليها تصير ممتازة." },
       { name: "مصطفى الطرابلسي", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن خاصها جهاز قوي، على الهاتف ديالي كتقطع شوية." }
     ]
-  }
+  },
+  {
+  id: 17,
+  title: "Outbound Travelling Simulator",
+  titleAr: "أوتراوند - محاكي السفر",
+  developer: "Blingames",
+  genre: "Simulation / Building",
+  status: "playing",
+  rating: 8.8,
+  date: "2026-05-01",
+  size: "110 MB",
+  downloadCount: 1400,
+  notes: "محاكي سفر وتجوال هادئ في عالم مستقبلي مريح. حوّل شاحنة كهربائية بسيطة إلى منزل متكامل على عجلات، وابنِ وازرع واطبخ أثناء استكشافك عالماً مفتوحاً بلا ضغوط أو مؤقتات.",
+  cover: {
+    colorA: "#0d9488",
+    colorB: "#042f2e",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 65 L15 50 Q15 42 22 42 L32 42 L42 30 L72 30 L80 42 L85 42 Q90 42 90 50 L90 65"/>
+      <path d="M15 65 L90 65"/>
+      <circle cx="30" cy="72" r="6"/>
+      <circle cx="75" cy="72" r="6"/>
+      <path d="M42 42 L52 42"/>
+      <path d="M58 42 L68 42"/>
+      <circle cx="50" cy="18" r="6"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "APKVision (APK v1.5)", url: "https://apkvision.org/games/simulation/outbound-travelling-simulator-133400/download/v1.5-apk/" }
+  ],
+  comments: [
+    { name: "يوسف الحلبي", dialect: "شامي", sentiment: "positive", rating: 5, text: "لعبة هادية وكتير حلوة، بتحس حالك مسافر فعلاً. بناء الشاحنة وتزيينها ممتع كتير." },
+    { name: "أحمد المصري", dialect: "مصري", sentiment: "positive", rating: 4, text: "فكرة حلوة وجديدة، مفيش ضغط ولا مؤقتات. بس ياريت يضيفوا محتوى أكتر." },
+    { name: "فهد العنزي", dialect: "خليجي", sentiment: "negative", rating: 3, text: "حلوة بس يبي لها وقت عشان تتعود على التحكم، والمحتوى قليل شوي." }
+  ]
+},
+{
+  id: 18,
+  title: "Max Payne Mobile",
+  titleAr: "ماكس باين موبايل",
+  developer: "Rockstar Games",
+  genre: "Third-Person Shooter",
+  status: "playing",
+  rating: 9.4,
+  date: "2012-06-13",
+  size: "1.36 GB",
+  downloadCount: 762400,
+  notes: "الجزء الأول من سلسلة النوار البوليسية الأسطورية. نظام Bullet Time الشهير، قصة سينمائية، وأسلوب لعب كلاسيكي. نسخة الأندرويد من Rockstar Games لكنها تعاني من مشاكل توافق مع بعض الأجهزة الحديثة.",
+  cover: {
+    colorA: "#6b21a8",
+    colorB: "#1a052a",
+    pattern: "lines",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M35 15 L35 55 Q35 85 50 85 Q65 85 65 55 L65 15 Z"/>
+      <path d="M35 30 L65 30"/>
+      <circle cx="50" cy="45" r="5"/>
+      <path d="M20 90 L80 90"/>
+      <path d="M25 22 L15 12"/>
+      <path d="M75 22 L85 12"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "APKVision (APK v2.1.131)", url: "https://apkvision.org/games/arcade/max-payne-mobile-apk-1-52962/download/v2.1.131-apk/" }
+  ],
+  comments: [
+    { name: "خالد العتيبي", dialect: "خليجي", sentiment: "positive", rating: 5, text: "الجزء الأول أسطورة، والـ Bullet Time ما زال أحلى شي في اللعبة. نسخة الجوال جيدة إذا اشتغلت." },
+    { name: "حسن المصري", dialect: "مصري", sentiment: "positive", rating: 4, text: "اللعبة أصلها تحفة، بس للأسف بتكرش على الموبايلات الجديدة. لو ظبطت معاك هتستمتع جداً." },
+    { name: "علي كربلائي", dialect: "عراقي", sentiment: "negative", rating: 3, text: "اللعبة حلوة بس ما تشتغل على تلفوني الجديد، لازم تحديثات من المطور." }
+  ]
+},
+{
+  id: 19,
+  title: "Smurfs' Village",
+  titleAr: "قرية السنافر",
+  developer: "Garden City Games (سابقاً Capcom)",
+  genre: "Simulation / City Building",
+  status: "done",
+  rating: 8.2,
+  date: "2010-11-10",
+  size: "1.65 GB (APK + OBB)",
+  downloadCount: 10000000,
+  notes: "لعبة بناء ومدن مبنية على مسلسل السنافر الشهير. ابنِ قريتك، ازرع المحاصيل، وازرع الأزهار، وأعد بناء منازل السنافر بعد هجوم شرير. تحتاج تحميل APK + ملف OBB ووضعه في المسار الصحيح.",
+  cover: {
+    colorA: "#2563eb",
+    colorB: "#0a1a4d",
+    pattern: "dots",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="35" r="18"/>
+      <path d="M50 53 L50 80"/>
+      <path d="M50 60 L30 50"/>
+      <path d="M50 60 L70 50"/>
+      <path d="M50 80 L35 92"/>
+      <path d="M50 80 L65 92"/>
+      <path d="M35 25 Q50 15 65 25"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "other", name: "APKVision (APK + OBB)", url: "https://apkvision.org/games/arcade/smurfs-village-11234/" }
+  ],
+  comments: [
+    { name: "منى المصرية", dialect: "مصري", sentiment: "positive", rating: 5, text: "لعبة حلوة ومسلية، بولادي بيحبوا السنافر جداً. بناء القرية والزراعة ممتعين." },
+    { name: "رنا اللبنانية", dialect: "شامي", sentiment: "positive", rating: 4, text: "كتير حلوة وبتفكرني بطفولتي مع السنافر. بس بدها صبر لأنها بطيئة شوي." },
+    { name: "سعود القحطاني", dialect: "خليجي", sentiment: "negative", rating: 3, text: "حلوة بس الحجم كبير واللعبة تصير بطيئة مع التقدم. يبي لها جهاز قوي." }
+  ]
+},
+{
+  id: 20,
+  title: "Winning Eleven 2026 (WE 26)",
+  titleAr: "وينينغ إليفن 2026",
+  developer: "Konami / Mod Community",
+  genre: "Sports / Football",
+  status: "playing",
+  rating: 8.9,
+  date: "2026-07-01",
+  size: "270 MB (APK) + محاكي ePSXe",
+  downloadCount: 18500,
+  notes: "نسخة معدّلة (Mod) من Winning Eleven تعمل بمحرك WE 2012 الكلاسيكي مع انتقالات موسم 2025/2026 محدّثة وأطقم حقيقية. تعمل أوفلاين بالكامل. تحتاج محاكي ePSXe لتشغيل ملف اللعبة.",
+  cover: {
+    colorA: "#15803d",
+    colorB: "#052e16",
+    pattern: "grid",
+    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="50" cy="50" r="32"/>
+      <path d="M50 30 L65 42 L58 62 L42 62 L35 42 Z"/>
+      <path d="M50 18 L50 30"/>
+      <path d="M78 38 L65 42"/>
+      <path d="M78 62 L58 62"/>
+      <path d="M50 82 L42 62"/>
+      <path d="M22 62 L35 42"/>
+      <path d="M22 38 L50 18"/>
+      <path d="M30 86 L70 86"/>
+    </svg>`
+  },
+  downloads: [
+    { source: "drive", name: "Google Drive (ملف اللعبة)", url: "https://drive.google.com/file/d/1STOEDSV4LdUgpOUD6PZTwMlm0nax8_L7/view" },
+    { source: "other", name: "AN1 (محاكي ePSXe)", url: "https://an1.com/4140-epsxe-for-android.html" }
+  ],
+  comments: [
+    { name: "ماجد الشمري", dialect: "خليجي", sentiment: "positive", rating: 5, text: "أحلى شي إنها أوفلاين وبحجم صغير، والانتقالات محدثة. تحس إنك تلعب WE زمان على البلايستيشن." },
+    { name: "مصطفى الطرابلسي", dialect: "مغربي", sentiment: "positive", rating: 4, text: "زوينة بزاف وخفیفة، ولكن خاصك محاكي ePSXe باش تشغلها. بعد التركيب كتخدم مزيان." },
+    { name: "كريم الجزائري", dialect: "مغربي", sentiment: "negative", rating: 3, text: "الرسومات قديمة (PS2 style) والتحكم صعيب شوية، بس لللي كيبغي النوستالجيا راهي مليحة." }
+  ]
+}
 ];
