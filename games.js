@@ -244,7 +244,7 @@ const games = [
       { name: "خالد العتيبي", dialect: "خليجي", sentiment: "positive", rating: 4, text: "حلوة والله، بس يبي لها مساحة كبيرة وتحميل ثلاث ملفات. إذا ركبتها صح تشتغل تمام." },
       { name: "علي كربلائي", dialect: "عراقي", sentiment: "negative", rating: 3, text: "حملت الملفات بس ما اشتغلت أول مرة، لازم ترتب المجلدات زين. بعد التعديل اشتغلت." }
     ]
-  }
+  },
   {
   id: 8,
   title: "Rusted Warfare (Generals Zero Hour Mod)",
@@ -278,5 +278,5 @@ const games = [
     { name: "أيمن جابري", dialect: "مصري", sentiment: "positive", rating: 5, text: "مود جنرالز زيرو آور ناقصها بس multiplayer أونلاين، غير كده اللعبة تحفة فنية." },
     { name: "سامي المعلمي", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن تركيب المود صعيب شوية على المبتدئين، خاصك تتبع الشرح مزيان." }
   ]
-     }
+     },
 ];
