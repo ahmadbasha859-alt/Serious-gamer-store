@@ -246,37 +246,101 @@ const games = [
     ]
   },
   {
-  id: 8,
-  title: "Rusted Warfare (Generals Zero Hour Mod)",
-  titleAr: "رستد وورفير - مود جنرالز زيرو آور",
-  developer: "Corroding Games / Mod Community",
-  genre: "RTS / Strategy",
-  status: "playing",
-  rating: 9.2,
-  date: "2017-11-15",
-  size: "150 MB + Mod",
-  downloadCount: 28700,
-  notes: "لعبة استراتيجية RTS كلاسيكية بأسلوب Command & Conquer، مع مود Generals Zero Hour الشهير الذي يضيف جيوشاً ووحدات من اللعبة الأصلية. تعمل أوفلاين وخفيفة على الأجهزة.",
-  cover: {
-    colorA: "#8b5a2b",
-    colorB: "#2a1a08",
-    pattern: "grid",
-    art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M20 80 L80 80"/>
-      <path d="M30 80 L30 55 L50 40 L70 55 L70 80"/>
-      <path d="M42 80 L42 65 L58 65 L58 80"/>
-      <circle cx="50" cy="28" r="10"/>
-      <path d="M50 18 L50 8"/>
-    </svg>`
+    id: 8,
+    title: "Rusted Warfare (Generals Zero Hour Mod)",
+    titleAr: "رستد وورفير - مود جنرالز زيرو آور",
+    developer: "Corroding Games / Mod Community",
+    genre: "RTS / Strategy",
+    status: "playing",
+    rating: 9.2,
+    date: "2017-11-15",
+    size: "150 MB + Mod",
+    downloadCount: 28700,
+    notes: "لعبة استراتيجية RTS كلاسيكية بأسلوب Command & Conquer، مع مود Generals Zero Hour الشهير الذي يضيف جيوشاً ووحدات من اللعبة الأصلية. تعمل أوفلاين وخفيفة على الأجهزة.",
+    cover: {
+      colorA: "#8b5a2b",
+      colorB: "#2a1a08",
+      pattern: "grid",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 80 L80 80"/>
+        <path d="M30 80 L30 55 L50 40 L70 55 L70 80"/>
+        <path d="M42 80 L42 65 L58 65 L58 80"/>
+        <circle cx="50" cy="28" r="10"/>
+        <path d="M50 18 L50 8"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "apkvision", name: "APKVision (APK v1.15.180)", url: "https://apkvision.org/games/strategy/rusted-warfare-rts-strategy-12366/download/v1.15.180-apk/" },
+      { source: "drive", name: "Google Drive (Mod - Generals Zero Hour)", url: "https://drive.google.com/file/d/1jfbKLbPYCmK51VUsUZYil6ph1SOtrJJ2/view" }
+    ],
+    comments: [
+      { name: "مهند البصري", dialect: "عراقي", sentiment: "positive", rating: 5, text: "أحلى لعبة RTS على الموبايل، ومود جنرالز رجّعني لأيام الكمبيوتر. تحكم سلس وبدون نت." },
+      { name: "أيمن جابري", dialect: "مصري", sentiment: "positive", rating: 5, text: "مود جنرالز زيرو آور ناقصها بس multiplayer أونلاين، غير كده اللعبة تحفة فنية." },
+      { name: "سامي المعلمي", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن تركيب المود صعيب شوية على المبتدئين، خاصك تتبع الشرح مزيان." }
+    ]
   },
-  downloads: [
-    { source: "apkvision", name: "APKVision (APK v1.15.180)", url: "https://apkvision.org/games/strategy/rusted-warfare-rts-strategy-12366/download/v1.15.180-apk/" },
-    { source: "drive", name: "Google Drive (Mod - Generals Zero Hour)", url: "https://drive.google.com/file/d/1jfbKLbPYCmK51VUsUZYil6ph1SOtrJJ2/view" }
-  ],
-  comments: [
-    { name: "مهند البصري", dialect: "عراقي", sentiment: "positive", rating: 5, text: "أحلى لعبة RTS على الموبايل، ومود جنرالز رجّعني لأيام الكمبيوتر. تحكم سلس وبدون نت." },
-    { name: "أيمن جابري", dialect: "مصري", sentiment: "positive", rating: 5, text: "مود جنرالز زيرو آور ناقصها بس multiplayer أونلاين، غير كده اللعبة تحفة فنية." },
-    { name: "سامي المعلمي", dialect: "مغربي", sentiment: "negative", rating: 3, text: "اللعبة زوينة ولكن تركيب المود صعيب شوية على المبتدئين، خاصك تتبع الشرح مزيان." }
-  ]
-     },
+  {
+    id: 9,
+    title: "Plants vs Zombies Fusion (Mod)",
+    titleAr: "بلانتس ضد زومبي فيوجن - مود",
+    developer: "EA / Fan Mod (Fusion)",
+    genre: "Tower Defense",
+    status: "playing",
+    rating: 9.0,
+    date: "2024-03-01",
+    size: "400 MB",
+    downloadCount: 41200,
+    notes: "نسخة معدّلة (Fusion) من PvZ تجمع نباتات من كل الأجزاء مع ميكانيكا دمج (Fusion) جديدة تسمح بتركيب نباتات هجينة قوية. محتوى ضخم ومستويات إضافية.",
+    cover: {
+      colorA: "#4caf50",
+      colorB: "#0d2b0f",
+      pattern: "dots",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 85 L50 50"/>
+        <path d="M50 50 Q28 48 26 26 Q48 24 50 50 Z"/>
+        <path d="M50 50 Q72 48 74 26 Q52 24 50 50 Z"/>
+        <circle cx="50" cy="50" r="6" fill="currentColor"/>
+        <path d="M40 85 L60 85"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "other", name: "PVZ Fusion (APK)", url: "https://pvzfusion.io/pvz-fusion-apk-download" }
+    ],
+    comments: [
+      { name: "حمزة الجزائري", dialect: "مغربي", sentiment: "positive", rating: 5, text: "الـ Fusion هذا إبداع! تدمج نباتين ويطلع لك نبات خارق. أحسن مود لـ PvZ بلا منازع." },
+      { name: "منى المصرية", dialect: "مصري", sentiment: "positive", rating: 4, text: "حلوة جداً وبتفكرني باللعبة الأصلية، بس بعض المستويات صعبة أوي محتاجة مجهود." },
+      { name: "عبدالرحمن الشامي", dialect: "شامي", sentiment: "negative", rating: 3, text: "كتير حلوة بس المود بياخد وقت طويل لتحميلو وتنصيبو، ومو كل الأجهزة بتشغلها." }
+    ]
+  },
+  {
+    id: 10,
+    title: "Balatro (Arabic)",
+    titleAr: "بالاترو - النسخة العربية",
+    developer: "LocalThunk",
+    genre: "Roguelike / Card",
+    status: "playing",
+    rating: 9.5,
+    date: "2024-02-20",
+    size: "200 MB",
+    downloadCount: 38600,
+    notes: "لعبة بطاقات روج-لايك إدمانية تعتمد على تكوين أيدي بوكر لتدمير الخصوم. النسخة العربية مترجمة بالكامل، جربتها وممتعة جداً.",
+    cover: {
+      colorA: "#dc2626",
+      colorB: "#1a0606",
+      pattern: "lines",
+      art: `<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="22" y="18" width="40" height="56" rx="4"/>
+        <rect x="38" y="26" width="40" height="56" rx="4"/>
+        <path d="M58 50 L58 62 M52 56 L64 56"/>
+      </svg>`
+    },
+    downloads: [
+      { source: "other", name: "ETRDream (نسخة عربية)", url: "https://etrdream.com/game/balatro/" }
+    ],
+    comments: [
+      { name: "يوسف الحلبي", dialect: "شامي", sentiment: "positive", rating: 5, text: "لعبة إدمان بشكل مو طبيعي! كل جولة بدك ترجع تلعب. الترجمة العربية ممتازة كمان." },
+      { name: "خالد المصري", dialect: "مصري", sentiment: "positive", rating: 5, text: "أحلى لعبة بطاقات لعبتها في حياتي. فكرة الجوكرز والدمج عبقرية. ما فيش أحسن منها للتسلية." },
+      { name: "فاطمة المغربية", dialect: "مغربي", sentiment: "neutral", rating: 4, text: "زوينة بزاف ولكن صعيبة شوية على اللي مابيعرفوش البوكر. خاصك تتعلم القواعد قبل." }
+    ]
+  }
 ];
